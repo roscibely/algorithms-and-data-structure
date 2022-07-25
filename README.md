@@ -1,1 +1,3 @@
-# algorithms-and-data-structure
+# Algorithms and Data Structure
+
+### Pt: Algoritmos e Estrutura de dados I
