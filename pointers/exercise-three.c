@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    /* Função do programa principal */ 
+     /* Função principal do programa */ 
 
     int a, b, c;    // Declaração de variáveis 
     int *p1;       // Declaração de um ponteiro p para int 
