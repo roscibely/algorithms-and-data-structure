@@ -14,11 +14,11 @@ void calcula_hexagono(float l, float *area, float *perimetro){
 }
 
 int main(void){
-    /* Função do programa principal */ 
+     /* Função principal do programa */ 
 
     float l, a, p; // Declaração das variaveis 
     scanf("%f", &l); // Realiza a leitura do lado de um hexágono e amarzena o valor em "l"
-    calcula_hexagono(l,&a,&p); //Faz a chamada da função calcula_hexagono
+    calcula_hexagono(l,&a,&p); //Faz a chamada da função calcula_hexagono passando como parametro o lado l, o endereço de a, o endereço de p
     printf("Area = %.2f \n Perimetro = %.2f \n", a,p); // Exibe a area e o perimetro calculados pela função calcula_hexagono
 
     return 0;
