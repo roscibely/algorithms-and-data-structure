@@ -1,4 +1,4 @@
-#include <stdint.h>
+#include <stdio.h>
 #include <math.h>
 
 void calcula_hexagono(float l, float *area, float *perimetro){
