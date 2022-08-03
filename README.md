@@ -8,7 +8,7 @@
 ### Pt: Algoritmos e Estrutura de dados I
 
 #### Parte I 
-1. (Ponteiros)[https://github.com/roscibely/algorithms-and-data-structure/tree/main/pointers] 
+1. [Ponteiros](https://github.com/roscibely/algorithms-and-data-structure/tree/main/pointers)
 2. Alocação dinâmica 
   * Vetores
   * Matrizes
