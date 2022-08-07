@@ -4,6 +4,7 @@
 </div>
 
 # Algorithms and Data Structure
+###### Professora: [Rosana Rego](https://github.com/roscibely)
 
 ### Pt: Algoritmos e Estrutura de dados I
 
