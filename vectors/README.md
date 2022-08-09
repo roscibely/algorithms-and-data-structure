@@ -1,5 +1,7 @@
 # Alocação dinâmica de Vetores 
 
+![](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/vectors/vetores.png)
+
 ## Nota: Tente primeiro fazer seu código e só depois disso acesse a possível resposta. 
 *Questão 1)* Implemente uma função que receba como parâmetro um vetor de números inteiros (vet) de tamanho n e retorne quantos números pares estão
 armazenados nesse vetor. Essa função deve obedecer ao protótipo: int pares(int n, int* vet); [Acesse a resposta](https://github.com/roscibely/algorithms-and-data-structure/blob/main/vectors/question-1.c)
@@ -14,3 +16,5 @@ produto (gostou/não gostou). Escreva um programa em C que:
   *  b) determine a porcentagem de pessoas do sexo feminino que responderam que gostaram do produto.
   *  c) determine a porcentagem de pessoas do sexo masculino que responderam que não gostaram do produto. 
    [Acesse a resposta](https://github.com/roscibely/algorithms-and-data-structure/blob/main/vectors/question-2.c)
+
+
