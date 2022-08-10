@@ -12,7 +12,7 @@
 1. [Ponteiros](https://github.com/roscibely/algorithms-and-data-structure/tree/main/pointers)
 2. Alocação dinâmica 
   * [Vetores](https://github.com/roscibely/algorithms-and-data-structure/tree/main/vectors)
-  * Matrizes
+  * [Matrizes](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/matrices)
 3. Tipos Estruturados
   * Vetores Estruturados
 4. Vetores de ponteiros para estruturas 
