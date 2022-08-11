@@ -17,4 +17,8 @@ produto (gostou/não gostou). Escreva um programa em C que:
   *  c) determine a porcentagem de pessoas do sexo masculino que responderam que não gostaram do produto. 
    [Acesse a resposta](https://github.com/roscibely/algorithms-and-data-structure/blob/main/vectors/question-2.c)
 
-
+*Questão 3)* Implemente uma função que preencha um vetor de N elementos com valores
+inteiros fornecidos via teclado, de modo que, à medida que um novo elemento
+é inserido, o vetor já permaneça organizado de maneira ordenada crescente.
+Escreva um programa que utiliza esta função, que deve obedecer ao seguinte
+protótipo: void preenche_ordenado(int n, int* vet);
