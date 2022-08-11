@@ -6,7 +6,8 @@
 # Algorithms and Data Structure
 ###### Professora: [Rosana Rego](https://github.com/roscibely)
 
-### Pt: Algoritmos e Estrutura de dados I
+### PEX1241 - Algoritmos e Estrutura de dados I
+#### Bacharelado em Interdisciplinar em Tecnologia da Informação - UFERSA
 
 #### Parte I 
 1. [Ponteiros](https://github.com/roscibely/algorithms-and-data-structure/tree/main/pointers)
