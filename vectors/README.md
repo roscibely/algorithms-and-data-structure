@@ -21,4 +21,4 @@ produto (gostou/não gostou). Escreva um programa em C que:
 inteiros fornecidos via teclado, de modo que, à medida que um novo elemento
 é inserido, o vetor já permaneça organizado de maneira ordenada crescente.
 Escreva um programa que utiliza esta função, que deve obedecer ao seguinte
-protótipo: void preenche_ordenado(int n, int* vet);
+protótipo: void preenche_ordenado(int n, int* vet); [Acesse a resposta](https://github.com/roscibely/algorithms-and-data-structure/blob/main/vectors/question-3.c)
