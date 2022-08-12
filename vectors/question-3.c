@@ -37,6 +37,8 @@ int main(void){
     for(j=n-1; j>=0; j--){
         printf("%d \t", vet[j]);
     }
+    
+    free(vet);
 
     return 0;
 }
