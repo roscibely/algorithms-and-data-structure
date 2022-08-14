@@ -14,7 +14,7 @@
 2. Alocação dinâmica 
   * [Vetores](https://github.com/roscibely/algorithms-and-data-structure/tree/main/vectors)
   * [Matrizes](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/matrices)
-3. Tipos Estruturados
+3. [Tipos Estruturados](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas)
   * Vetores Estruturados
 4. Vetores de ponteiros para estruturas 
 5. União e enumerações 
