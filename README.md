@@ -15,6 +15,6 @@
   * [Vetores](https://github.com/roscibely/algorithms-and-data-structure/tree/main/vectors)
   * [Matrizes](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/matrices)
 3. [Tipos Estruturados](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas)
-  * Vetores Estruturados
+  * [Vetores Estruturados](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas/vetores-estruturados)
 4. Vetores de ponteiros para estruturas 
 5. União e enumerações 
