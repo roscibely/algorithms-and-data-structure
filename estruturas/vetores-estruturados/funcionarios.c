@@ -14,7 +14,7 @@ int main(void){
     Funcionario vetor_de_functionarios[NUMERO_DE_FUNCIONARIOS]; 
     int contador; 
 
-    printf("\n----Digite os dados refentes aos funcionarios--- \n\n");
+    printf("\n----Digite os dados referentes aos funcionarios--- \n\n");
     //Leitura dos dados dos funcionarios
     for(contador=0; contador<NUMERO_DE_FUNCIONARIOS; contador++){
 
