@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define NUMERO_DE_FUNCIONARIOS  10 //Declaração de constante 
+#define NUMERO_DE_FUNCIONARIOS  2 //Declaração de constante 
 
 typedef struct funcionario{
     char nome[100];
@@ -19,7 +19,7 @@ int main(void){
     for(contador=0; contador<NUMERO_DE_FUNCIONARIOS; contador++){
 
         printf("Digite o nome do funcionario \n");
-        scanf("%[^\n]", vetor_de_functionarios[contador].nome);
+        scanf(" %[^\n]", vetor_de_functionarios[contador].nome);
 
         printf("Digite a idade do funcionario \n");
         scanf("%d", &vetor_de_functionarios[contador].idade);
