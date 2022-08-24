@@ -12,9 +12,10 @@
 #### Parte I 
 1. [Ponteiros](https://github.com/roscibely/algorithms-and-data-structure/tree/main/pointers)
 2. Alocação dinâmica 
-  * [Vetores](https://github.com/roscibely/algorithms-and-data-structure/tree/main/vectors)
-  * [Matrizes](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/matrices)
+  - 2.1 [Vetores](https://github.com/roscibely/algorithms-and-data-structure/tree/main/vectors)
+  - 2.2 [Matrizes](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/matrices)
 3. [Tipos Estruturados](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas)
-  * [Vetores de Estruturas](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas/vetores-estruturados)
-4. Vetores de ponteiros para estruturas 
-5. União e enumerações 
+  - 3.1  [Vetores de Estruturas](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas/vetores-estruturados)
+  - 3.2  [Vetores de ponteiros para estruturas](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/estruturas/vetores-de-ponteiros-de-struct)
+  - 3.3 União
+  - 3.4 Enumerações 
