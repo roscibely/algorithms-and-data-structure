@@ -17,5 +17,5 @@
 3. [Tipos Estruturados](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas)
   - 3.1  [Vetores de Estruturas](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas/vetores-estruturados)
   - 3.2  [Vetores de ponteiros para estruturas](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/estruturas/vetores-de-ponteiros-de-struct)
-  - 3.3 União
+  - 3.3 [União](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas/union)
   - 3.4 Enumerações 
