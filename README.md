@@ -19,3 +19,10 @@
   - 3.2  [Vetores de ponteiros para estruturas](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/estruturas/vetores-de-ponteiros-de-struct)
   - 3.3 [União](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas/union)
   - 3.4 [Enumerações](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas/enum) 
+
+#### Parte II
+
+  1. Arquivos 
+  2. Tipos abstrato de dados 
+  3. Algoritmos de Busca
+  4. Algoritmos de Ordenação
