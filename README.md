@@ -7,7 +7,7 @@
 ###### Professora: [Rosana Rego](https://github.com/roscibely)
 
 ### PEX1241 - Algoritmos e Estrutura de dados I
-#### Bacharelado em Interdisciplinar em Tecnologia da Informação - UFERSA
+#### Bacharelado Interdisciplinar em Tecnologia da Informação - UFERSA
 
 #### Parte I 
 1. [Ponteiros](https://github.com/roscibely/algorithms-and-data-structure/tree/main/pointers)
@@ -27,7 +27,14 @@
   3. Algoritmos de Busca
   4. Algoritmos de Ordenação
 
+#### Parte III
+
+  1. Estrutura de dados: Lista
+  2. Estrutura de dados: Pilha
+  3. Estrutura de dados: Fila 
+
 
 <div>
   <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/develop/ufersa.jpg" width="700" height="250">
 </div>
+<i>UFERSA - Campus Pau dos Ferros</i>
