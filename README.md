@@ -26,3 +26,8 @@
   2. Tipos abstrato de dados 
   3. Algoritmos de Busca
   4. Algoritmos de Ordenação
+
+
+<div>
+  <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/develop/ufersa.jpg" width="700" height="250">
+</div>
