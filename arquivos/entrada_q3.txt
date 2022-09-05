@@ -1,0 +1,8 @@
+Amanda	7.0	6.5	9.0
+Alberto	5.0	7.0	3.5
+Jane	8.0	6.8	4.5
+Igor	9.0	9.0	8.5
+Samara	10.0	10.0	7.0
+Maria Luiza	10.0	10.0	10.0
+Cesar 	10.0	9.0	8.0
+Pedro Felipe	7.0	7.0	7.0
