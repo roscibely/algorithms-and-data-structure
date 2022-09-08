@@ -37,8 +37,19 @@
     
     - Funções para ler dados:
      int fscanf (FILE* fp, char* formato, ...); 
+        - fp: ponteiro para o arquivo que será lido;
+        - formato: formato da string que será lida do arquivo;
+        - ...: variáveis que receberão os dados lidos do arquivo;
+
      int fgetc (FILE* fp);
-     char* fgets (char* s, int n, FILE* fp)
+        - fp: ponteiro para o arquivo que será lido;
+        - retorna: caractere lido do arquivo;
+
+     char* fgets (char* s, int n, FILE* fp); 
+        - s: string que receberá os dados lidos do arquivo;
+        - n: tamanho máximo da string;
+        - fp: ponteiro para o arquivo que será lido;
+        - retorna: string lida do arquivo;
  */
 
 int main() {
