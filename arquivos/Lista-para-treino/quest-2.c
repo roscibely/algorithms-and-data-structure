@@ -4,7 +4,7 @@ imprima o valor gasto com a folha de pagamento para um determinado departamento.
 Os dados dos funcionários da empresa devem ser fornecidos para um vetor,
 de modo que uma função que execute tal tarefa deve ser implementada, obedecendo ao protótipo:
 
-void copia_dados(FILE* fl, int n, Funcionario* pessoal);
+void copia_dados(FILE* fl, int n, Funcionario** pessoal);
 */
 
 
@@ -82,19 +82,19 @@ void copia_dados(FILE* fl, int n, Funcionario** pessoal){
 /* 
 implementar uma função que imprime o valor gasto para um determinado departamento.
 Esta função deve obedecer ao seguinte protótipo:
-void imprime_folha_pagamento(int n, Funcionario* pessoal, char depto);
+void imprime_folha_pagamento(int n, Funcionario** pessoal, char depto);
 */
 
 void imprime_folha_pagamento(int n, Funcionario** pessoal, char depto){
 
     int i=0; // Variavel para controle do laço de repetição e Inicializando a variavel i com 0
 
-    printf("Folha de pagamento do departamento %c \n\n", depto); //mensagem 
-    printf("Funcional\tNome\t\tDepartamento\tSalario"); //mensagem
+    printf("\nFolha de pagamento do departamento %c\n", depto); //mensagem 
+    printf("Funcional\tNome\t\tDepartamento\tSalario\n"); //mensagem
 
     while(i<n){ // Laço de repetição para ler as linhas do arquivo de entrada
         if(strcmp(&(pessoal[i]->departamento), &(depto)) == 0){ // Verifica se o departamento é igual ao depto
-            printf("\n%s\t\t%s\t\t%c\t\t%.2f\n", pessoal[i]->funcional, pessoal[i]->nome, pessoal[i]->departamento, pessoal[i]->salario); // Imprime os dados do funcionario
+            printf("%s\t\t%s\t\t%c\t\t%.2f\n", pessoal[i]->funcional, pessoal[i]->nome, pessoal[i]->departamento, pessoal[i]->salario); // Imprime os dados do funcionario
         }
         i++; // Incrementa a variavel i
     }
