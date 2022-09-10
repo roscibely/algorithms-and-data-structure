@@ -19,15 +19,15 @@ typedef struct funcionario{
     char funcional[11];
 }Funcionario;
 
-void copia_dados(FILE* fl, int n, Funcionario* pessoal); // protótipo da função que copia os dados do arquivo para o vetor de ponteiro pessoal
-void imprime_folha_pagamento(int n, Funcionario* pessoal, char depto); // protótipo da função que imprime a folha de pagamento de um determinado departamento
+void copia_dados(FILE* fl, int n, Funcionario** pessoal); // protótipo da função que copia os dados do arquivo para o vetor de ponteiro pessoal
+void imprime_folha_pagamento(int n, Funcionario** pessoal, char depto); // protótipo da função que imprime a folha de pagamento de um determinado departamento
  
 // função principal 
 int main(void) {
 
     char linha[100]; // Variavel para armazenar a linha lida do arquivo
     int n; // Variavel para armazenar o numero de funcionarios
-    Funcionario* pessoal; // Ponteiro para a estrutura Funcionario
+    Funcionario** pessoal; // Ponteiro para a estrutura Funcionario
     FILE * arquivo_de_entrada; // Variavel para armazenar o ponteiro do arquivo de entrada
     int i; // Variavel para controle do laço de repetição
     i=0; // Inicializando a variavel i com 0
@@ -42,7 +42,10 @@ int main(void) {
     sscanf(linha, "%d", &n); // Lê a linha do arquivo de entrada e armazena o valor em n
     printf("Numero de funcionarios: %d\n", n); // Imprime o numero de funcionarios
 
-    pessoal = (Funcionario*) malloc(n*sizeof(Funcionario)); // Alocando memoria para o vetor pessoal
+    pessoal = (Funcionario**) malloc(n*sizeof(Funcionario*)); // Alocando memoria para o vetor pessoal
+    for(i=0; i<n; i++){ // Laço de repetição para alocar memoria para cada elemento do vetor pessoal
+        pessoal[i] = (Funcionario*) malloc(sizeof(Funcionario)); // Alocando memoria para cada elemento do vetor pessoal
+    }
 
     printf("\nCopiando dados do arquivo para o vetor...\n\n");
     copia_dados(arquivo_de_entrada, n, pessoal); // Chamando a função copia_dados
@@ -52,19 +55,24 @@ int main(void) {
     imprime_folha_pagamento(n, pessoal, 'B'); // Chamando a função imprime_folha_pagamento
 
     fclose(arquivo_de_entrada); // Fecha o arquivo de entrada
+
+    for(i=0; i<n; i++){ // Laço de repetição para liberar a memoria alocada para cada elemento do vetor pessoal
+        free(pessoal[i]); // Liberando a memoria alocada para cada elemento do vetor pessoal
+    }
     free(pessoal); // Libera a memoria alocada para o vetor pessoal
+
     return 0; // Retorna 0 para o sistema operacional
 
 }
 
-void copia_dados(FILE* fl, int n, Funcionario* pessoal){
+void copia_dados(FILE* fl, int n, Funcionario** pessoal){
     int i=0; // Variavel para controle do laço de repetição
     while(!feof(fl)){ // Laço de repetição que lê as linhas do arquivo de entrada feof verifica se o arquivo chegou ao fim
         if(i==0){
             fscanf(fl,"%d", &n); // Lê a primeira linha do arquivo de entrada que contém o numero de funcionarios ao todo na empresa
         }
         else{ //Ler as demais linhas do arquivo de entrada
-            fscanf(fl,"%[^\t]\t%[^\t]\t%c\t%f ", pessoal[i-1].funcional, pessoal[i-1].nome, &pessoal[i-1].departamento, &pessoal[i-1].salario); // Lê a linha do arquivo de entrada e armazena nos parametros da estrutura funcionario
+            fscanf(fl,"%[^\t]\t%[^\t]\t%c\t%f ", pessoal[i-1]->funcional, pessoal[i-1]->nome, &pessoal[i-1]->departamento, &pessoal[i-1]->salario); // Lê a linha do arquivo de entrada e armazena nos parametros da estrutura funcionario
         }
         i++; // Incrementa a variavel i
     }    
@@ -77,7 +85,7 @@ Esta função deve obedecer ao seguinte protótipo:
 void imprime_folha_pagamento(int n, Funcionario* pessoal, char depto);
 */
 
-void imprime_folha_pagamento(int n, Funcionario* pessoal, char depto){
+void imprime_folha_pagamento(int n, Funcionario** pessoal, char depto){
 
     int i=0; // Variavel para controle do laço de repetição e Inicializando a variavel i com 0
 
@@ -85,8 +93,8 @@ void imprime_folha_pagamento(int n, Funcionario* pessoal, char depto){
     printf("Funcional\tNome\t\tDepartamento\tSalario"); //mensagem
 
     while(i<n){ // Laço de repetição para ler as linhas do arquivo de entrada
-        if(strcmp(&(pessoal[i].departamento), &(depto)) == 0){ // Verifica se o departamento é igual ao depto
-            printf("\n%s\t\t%s\t\t%c\t\t%.2f\n", pessoal[i].funcional, pessoal[i].nome, pessoal[i].departamento, pessoal[i].salario); // Imprime os dados do funcionario
+        if(strcmp(&(pessoal[i]->departamento), &(depto)) == 0){ // Verifica se o departamento é igual ao depto
+            printf("\n%s\t\t%s\t\t%c\t\t%.2f\n", pessoal[i]->funcional, pessoal[i]->nome, pessoal[i]->departamento, pessoal[i]->salario); // Imprime os dados do funcionario
         }
         i++; // Incrementa a variavel i
     }
