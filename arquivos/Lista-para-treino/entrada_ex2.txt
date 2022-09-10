@@ -1,0 +1,6 @@
+4
+A1	Ana	A	800
+A2	Beatriz	A	800.50
+A3	Beatrize	A	800.50
+A4	Joao	B	800.50
+
