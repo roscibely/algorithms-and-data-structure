@@ -23,7 +23,7 @@
 #### Parte II
 
   1. [Arquivos](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/arquivos) 
-  2. Tipos abstrato de dados 
+  2. [Tipos abstrato de dados](https://github.com/roscibely/algorithms-and-data-structure/tree/main/TAD) 
   3. Algoritmos de Busca
   4. Algoritmos de Ordenação
 
