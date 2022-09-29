@@ -11,11 +11,11 @@ ContaBancaria *criaconta(char * nome_arquivo);
 
 /*Deposita: recebe, como parâmetros, o endereço de uma estrutura do tipo ContaBancaria
  e um valor, atualizando o saldo;*/
-void deposita(ContaBancaria *conta, float valor, char * nome_arquivo);
+void deposita(ContaBancaria *conta, float valor);
 
 /*Saca: recebe, como parâmetros, o endereço de uma estrutura do tipo ContaBancaria
  e um valor, atualizando o saldo;*/
-void saca(ContaBancaria *conta, float valor, char * nome_arquivo);
+void saca(ContaBancaria *conta, float valor);
 
 /*Transfere: recebe, como parâmetros, o endereço de duas estruturas do tipo ContaBancaria
  e um valor, atualizando o saldo das duas contas;*/
