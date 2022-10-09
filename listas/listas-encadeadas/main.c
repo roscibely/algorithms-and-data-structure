@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Lista.h"
+#include "lista.h"
 
 int main(void){
 
-    Lista2* l = NULL;
-    l= lst_insere(l,2);
-    l = lst_busca(l, 2);
-    l= lst_insere(l,3);
-    l= lst_insere(l,6);
-    l= lst_retira(l, 3);
-    lst_imprime(l);
-
+	Lista* l = lst_cria(); /*Cria uma lista*/
+	l = lst_insere(l, 2); /*Insere o elemento na lista*/
+	l = lst_insere(l, 5);
+	l = lst_insere(l, 5);
+	l= lst_retira_recursiva(l, 2);
+	lst_imprime(l);
+	return 0;
 }
