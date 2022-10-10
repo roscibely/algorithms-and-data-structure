@@ -1,15 +1,28 @@
-#ifndef LISTA_H_INCLUDED
-#define LISTA_H_INCLUDED
+typedef struct lista Lista;
 
 
-typedef struct lista2 Lista2;
+// função que cria uma lista vazia (NULL)
+Lista* lst_cria(void);
 
-Lista2* lst_insere(Lista2 *l, int v);
+// função que insere um elemento no início da lista
+Lista* lst_insere(Lista* l, int v);
 
-void lst_imprime(Lista2*l);
+//função que verifica se a lista está vazia
+int lst_vazia(Lista *l);
 
-Lista2* lst_busca(Lista2 *l, int v);
+//função que imprime os elementos da lista
+void lst_imprime(Lista*l);
 
-Lista2* lst_retira(Lista2 *l, int v);
+//função que busca um elemento na lista
+Lista * lst_busca(int elemento, Lista* l);
 
-#endif // LISTA_H_INCLUDED
+//função que retira um elemento da lista
+Lista * lst_retira(Lista*l, int v);
+
+//função que libera a memória alocada para a lista
+void lst_libera(Lista* l);
+
+// função que insere de forma ordenada um elemento na lista
+Lista* lst_insere_ordenada(Lista * l, int v);
+
+
