@@ -51,7 +51,7 @@ void lst_imprime(Lista*l){
 Lista * lst_busca(int elemento, Lista* l){
 	Lista * p;
 	for(p=l; p!=NULL; p=p->prox){
-		if(p->prox ==elemento)
+		if(p->info ==elemento)
 			return p;
 	}
 
