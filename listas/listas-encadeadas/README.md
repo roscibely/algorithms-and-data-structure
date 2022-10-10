@@ -2,7 +2,7 @@
 
 ### Lista encadadedas são estruturas de dados que armazenam dados de forma sequencial, mas cada elemento da lista é um objeto que contém um campo com o dado e um campo com o endereço do próximo elemento da lista.
 
-Exemplo de lista encadeada:
+Exemplo de lista encadeada para inteiros:
 
 ```c 
 struct no {
