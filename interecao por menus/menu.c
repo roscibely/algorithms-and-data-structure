@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include <windows.h>
 
 #define TITULO_OPCAO1 "Soma de dois numeros inteiros"
 #define TITULO_OPCAO2 "Multiplicacao de dois numeros inteiros"
@@ -102,6 +103,7 @@ int main(void) {
         op = LeOpcao(OPCAO1, OPCAO1 + N_OPCOES - 1);
         switch(op) {
             case OPCAO1:
+                Beep(1000,500); /* Emite um beep */
                 inteiro1 = LeInteiro();
                 inteiro2 = LeInteiro();
                 printf("%d + %d = %d\n", inteiro1, inteiro2,
@@ -109,6 +111,7 @@ int main(void) {
                 break;
 
             case OPCAO2:
+                Beep(1000,500);
                 inteiro1 = LeInteiro();
                 inteiro2 = LeInteiro();
                 printf("%d * %d = %d\n", inteiro1, inteiro2,
@@ -116,6 +119,7 @@ int main(void) {
                 break;
 
             case OPCAO3:
+                Beep(1000,500);
                 inteiro1 = LeInteiro();
                 inteiro2 = LeInteiro();
                 printf("%d / %d = %d\n", inteiro1, inteiro2,
@@ -123,6 +127,7 @@ int main(void) {
                 break;
 
             case OPCAO4:
+                Beep(1000,500);
                 saida = 1;
                 printf("Obrigado por usar este programa.");
                 break;
