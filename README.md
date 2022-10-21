@@ -30,7 +30,7 @@
 #### Parte III
 
   1. [Estrutura de dados: Lista](https://github.com/roscibely/algorithms-and-data-structure/tree/main/listas)
-  2. Estrutura de dados: Pilha
+  2. [Estrutura de dados: Pilha](https://github.com/roscibely/algorithms-and-data-structure/tree/main/pilha)
   3. Estrutura de dados: Fila 
   
 #### EXTRA 
