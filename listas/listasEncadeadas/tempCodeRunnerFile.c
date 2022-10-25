@@ -1,1 +1,0 @@
-lst_imprime(l);
