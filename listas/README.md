@@ -4,7 +4,8 @@
 
 1. [Listas simples (encadeada)](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/listas/listasEncadeadas)
 2. [Listas duplamente encadeadas](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/listas/listas-duplamente-encadeadas)
-3. [Listas circulares](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/listas/listas-circulares)
+3. [Listas circulares]()
+4. [Listas duplamente circulares](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/listas/listas-circulares)
 
 
 Referências recomendadas: 
