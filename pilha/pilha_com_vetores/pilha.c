@@ -1,5 +1,3 @@
-// implemente a struct pilha com vetores 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "pilha.h"
@@ -49,4 +47,6 @@ void pilha_imprime(Pilha* p) {
         printf("%d ", p->dados[i]);
     printf("\"\n");
 }
+
+
 
