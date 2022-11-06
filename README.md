@@ -31,7 +31,7 @@
 
   1. [Estrutura de dados: Lista](https://github.com/roscibely/algorithms-and-data-structure/tree/main/listas)
   2. [Estrutura de dados: Pilha](https://github.com/roscibely/algorithms-and-data-structure/tree/main/pilha)
-  3. Estrutura de dados: Fila 
+  3. [Estrutura de dados: Fila](https://github.com/roscibely/algorithms-and-data-structure/tree/main/filas) 
   
 #### EXTRA 
   1. [Intereção por menu](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/interecao%20por%20menus)
