@@ -17,4 +17,6 @@ void fila_libera(Fila* f);
 
 void fila_imprime(Fila* f);
 
+int incrementa(int i);
+
 #endif
