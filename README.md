@@ -11,7 +11,7 @@
 
 #### Parte I 
 1. [Ponteiros](https://github.com/roscibely/algorithms-and-data-structure/tree/main/pointers)
-2. Alocação dinâmica 
+2. [Alocação dinâmica](https://github.com/roscibely/algorithms-and-data-structure/blob/main/pointers/alocdinamic.md) 
   - 2.1 [Vetores](https://github.com/roscibely/algorithms-and-data-structure/tree/main/vectors)
   - 2.2 [Matrizes](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/matrices)
 3. [Tipos Estruturados](https://github.com/roscibely/algorithms-and-data-structure/tree/main/estruturas)
