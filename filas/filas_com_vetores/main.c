@@ -6,9 +6,12 @@ int main(void){
     fila_insere(f, 20);
     fila_insere(f, 30);
     fila_imprime(f);
+
+
     fila_remove(f);
     fila_insere(f, 40);
     fila_imprime(f);
     fila_libera(f);
     return 0;
 }
+

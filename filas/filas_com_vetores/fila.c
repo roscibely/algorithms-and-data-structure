@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "fila.h"
 
-#define MAX 3
+#define MAX 10
 
 struct fila {
     int inicio;
@@ -34,6 +34,7 @@ int fila_remove(Fila* f) {
         printf("Fila vazia!"); 
         exit(1); // aborta programa
     }
+
     int elemento = f->dados[f->inicio];
     f->inicio = incrementa(f->inicio);
     f->numero_elementos--;
@@ -51,6 +52,8 @@ int fila_cheia(Fila* f) {
 void fila_libera(Fila* f) {
     free(f);
 }
+
+
 
 void fila_imprime(Fila* f) {
     int i;
