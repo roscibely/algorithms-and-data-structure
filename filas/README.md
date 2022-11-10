@@ -8,6 +8,10 @@ Uma fila é uma estrutura de dados que segue o princípio FIFO (First In First O
 
 A fila é uma estrutura de dados que funciona como uma fila de banco, onde o primeiro a chegar é o primeiro a ser atendido.
 
+### Ilustração de como funciona uma fila
+
+![Fila](https://www.arquivodecodigos.com.br/imagens_dicas/202205301343.jpg)
+
 ## Exemplo
 
 ```c 
