@@ -1,5 +1,123 @@
 # Alocação dinâmica de Vetores 
 
+# Introdução a vetores 
+
+## Vetores
+
+Um vetor é uma variável que armazena vários valores do mesmo tipo.
+
+## Declaração de Vetores
+
+Para declarar um vetor, basta colocar colchetes depois do nome da variável.
+
+```c
+int x[5];
+```
+
+## Atribuição de Vetores
+
+Para atribuir um vetor, basta colocar os valores entre chaves.
+
+```c
+
+int x[5] = {1, 2, 3, 4, 5};
+```
+
+## Acesso aos Valores de um Vetor
+
+Para acessar os valores de um vetor, basta colocar o índice entre colchetes.
+
+```c
+
+int x[5] = {1, 2, 3, 4, 5};
+
+printf("%d", x[0]);
+```
+
+## Acesso ao Endereço de um Vetor
+
+Para acessar o endereço de um vetor, basta colocar um & antes do nome da variável.
+
+```c
+
+int x[5] = {1, 2, 3, 4, 5};
+
+printf("%d", &x);
+```
+
+## Ponteiros e Vetores
+
+Um vetor é um ponteiro para o primeiro elemento do vetor.
+
+```c
+
+int x[5] = {1, 2, 3, 4, 5};
+
+int *p = x;
+
+printf("%d", *p);
+```
+
+## Alocação Dinâmica de Vetores
+
+Para alocar dinamicamente um vetor, basta usar a função malloc.
+
+```c
+
+int *x = malloc(5 * sizeof(int));
+
+x[0] = 1;
+x[1] = 2;
+x[2] = 3;
+x[3] = 4;
+x[4] = 5;
+
+printf("%d", x[0]);
+```
+
+## Desalocação de Vetores
+
+Para desalocar um vetor, basta usar a função free.
+
+```c
+
+int *x = malloc(1 * sizeof(int));
+
+x[0] = 1;
+
+free(x);
+```
+
+## Funçãp realloc 
+
+A função realloc é usada para realocar um vetor.
+
+```c
+
+int *x = malloc(1 * sizeof(int));
+
+x[0] = 1;
+
+x = realloc(x, 5 * sizeof(int));
+
+x[1] = 2;
+x[2] = 3;
+x[3] = 4;
+x[4] = 5;
+
+printf("%d", x[0]);
+```
+
+## Função calloc 
+
+A função calloc é usada para alocar um vetor e inicializar todos os valores com 0.
+
+```c
+
+int *x = calloc(5, sizeof(int));
+
+printf("%d", x[0]);
+```
 
 <div>
   <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/develop/vectors/vetores.png" width="350" height="300">
