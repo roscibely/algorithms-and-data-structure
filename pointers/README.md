@@ -43,7 +43,7 @@ Para acessar o endereço de um ponteiro, basta colocar um & antes do nome da var
 int x = 10;
 int *p = &x;
 
-printf("%d", &p);
+printf("%p", &p);
 ```
 
 ## Ponteiros e Vetores
