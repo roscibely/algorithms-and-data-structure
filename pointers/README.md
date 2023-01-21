@@ -58,6 +58,62 @@ int *p = x;
 printf("%d", *p);
 ```
 
+## Ponteiros para Ponteiros
+
+Um ponteiro para ponteiro é um ponteiro que aponta para outro ponteiro. Isto é, um ponteiro que aponta para um endereço de memória que contém outro endereço de memória. Isso é útil quando precisamos manipular uma estrutura de dados complexa.
+
+```c
+
+int x = 10;
+int *p = &x;
+int **pp = &p;
+
+printf("%d", **pp); //Acessamos o valor de x com **pp (conteúdo do conteúdo de pp)
+```
+
+## Ponteiros e Funções
+
+Podemos também declarar ponteiros de funções. Isso é útil quando precisamos passar uma função como parâmetro para outra função.
+
+```c
+
+int soma(int a, int b) {
+    return a + b;
+}
+
+int (*p)(int, int) = soma; /* Declaração de um ponteiro para função que recebe dois inteiros e retorna um inteiro */
+
+printf("%d", p(1, 2));
+```
+
+Um ponteiro para função pode ser usado para criar uma função que recebe outra função como parâmetro.
+
+```c
+
+float (*ponteiro_para_funcao)(int, int); // Ponteiro para função que recebe dois inteiros e retorna um float
+```
+
+# Exemplo: Função que recebe outra função como parâmetro
+
+
+```c
+float media(int a, int b) {
+    return (a + b) / 2.0;
+}
+
+void calcula(int a, int b, float (*ponteiro_para_funcao)(int, int)) {
+    printf("%f", ponteiro_para_funcao(a, b));
+}
+
+int main(void){
+    calcula(1, 2, media);
+    return 0;
+}
+
+```
+
+
+
 
 
 
