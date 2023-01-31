@@ -57,6 +57,84 @@ for (int i = 0; i < 3; i++) { // libera as colunas
 free(matriz); // libera as linhas
 ```
 
+## Passando matrizes para funções
+
+Para passar uma matriz para uma função, devemos passar o número de linhas e o número de colunas da matriz. Por exemplo, para passar uma matriz de 3 linhas e 3 colunas para uma função, podemos fazer da seguinte forma:
+
+```c
+void imprimeMatriz(int **matriz, int linhas, int colunas) {
+    for (int i = 0; i < linhas; i++) {
+        for (int j = 0; j < colunas; j++) {
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+}
+```
+
+A função acima recebe uma matriz de inteiros, o número de linhas e o número de colunas da matriz. Em seguida, ela imprime a matriz na tela.
+
+## Exemplo: Soma de matrizes
+
+Para somar duas matrizes, devemos percorrer as duas matrizes e somar os elementos de mesma posição. Por exemplo, para somar as matrizes abaixo:
+
+```c
+int matriz1[3][3] = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+
+int matriz2[3][3] = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+```
+
+Podemos fazer da seguinte forma:
+
+```c
+
+int matriz3[3][3];
+
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        matriz3[i][j] = matriz1[i][j] + matriz2[i][j];
+    }
+}
+```
+
+Com alocação dinâmica:
+
+```c
+int colunas = 3;
+int linhas = 3;
+
+int **matriz1 = (int **) malloc(linhas * sizeof(int *)); // aloca as linhas
+for (int i = 0; i < 3; i++) { // aloca as colunas
+    matriz1[i] = (int *) malloc(colunas * sizeof(int));
+}
+
+int **matriz2 = (int **) malloc(linhas * sizeof(int *)); // aloca as linhas
+for (int i = 0; i < 3; i++) { // aloca as colunas
+    matriz2[i] = (int *) malloc(colunas * sizeof(int));
+}
+
+int **matriz3 = (int **) malloc(linhas * sizeof(int *)); // aloca as linhas
+for (int i = 0; i < 3; i++) { // aloca as colunas
+    matriz3[i] = (int *) malloc(colunas * sizeof(int));
+}
+
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        matriz3[i][j] = matriz1[i][j] + matriz2[i][j];
+    }
+}
+```
+
+
+
 ## Exercícios
 
 
