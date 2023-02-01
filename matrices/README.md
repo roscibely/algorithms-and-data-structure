@@ -46,6 +46,20 @@ for (int i = 0; i < 3; i++) { // aloca as colunas
 
 ![](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/matrices/matriz.jpg)
 
+## Função para alocar dinamicamente uma matriz
+
+Você pode criar uma função para alocar dinamicamente uma matriz. 
+```c
+int **alocaMatriz(int linhas, int colunas) {
+    int **matriz = (int **) malloc(linhas * sizeof(int *)); 
+    for (int i = 0; i < linhas; i++) { 
+        matriz[i] = (int *) malloc(colunas * sizeof(int));
+    }
+    return matriz;
+}
+```
+A função acima recebe o número de linhas e o número de colunas da matriz e retorna a matriz alocada dinamicamente.
+
 ### Liberação da memória
 
 Para liberar a memória alocada dinamicamente para uma matriz, podemos fazer da seguinte forma:
