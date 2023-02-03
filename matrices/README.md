@@ -147,12 +147,14 @@ for (int i = 0; i < 3; i++) {
 }
 ```
 
+## Exemplos realizados em sala de aula 
+
+[Exemplo 1](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/matrices/exemplo_aula.c): Nomes completos 
+
+[Exemplo 2](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/matrices/frutas_exemplo.c): Frutas e Preços
 
 
 ## Exercícios
-
-
-
 
 
 
