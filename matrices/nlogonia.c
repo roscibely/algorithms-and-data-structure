@@ -21,16 +21,40 @@ int main(void){
             scanf(" %[^\n]s", matriz[i]);
     }
 
-    for(i = 0; i < m; i++)
-        for(j = 0; j < n; j++)
-            if(matriz[i][j] == '#')
-            {   if(i == 0 || i == m - 1 || j == 0 || j == n - 1)
-                    continue;
-                else if(matriz[i - 1][j] == '.' || matriz[i + 1][j] == '.' || matriz[i][j - 1] == '.' || matriz[i][j + 1] == '.')
-                    cont++;
 
-
+for ( i = 0; i < m; i++) {
+    for (j = 0; j < n; j++) {
+        if (matriz[i][j] == '#') {
+          
+            if ((i == 0 && j == 0 && (i + 1 < m && matriz[i + 1][j] == '.') || (j + 1 < n && matriz[i][j + 1] == '.'))) {
+                cont++;
+            } else if ((i == 0 && j == n - 1 && (i + 1 < m && matriz[i + 1][j] == '.') || (j > 0 && matriz[i][j - 1] == '.'))) {
+                cont++;
+            } else if ((i == m - 1 && j == 0 && (i > 0 && matriz[i - 1][j] == '.') || (j + 1 < n && matriz[i][j + 1] == '.'))) {
+                cont++;
+            } else if ((i == m - 1 && j == n - 1 && (i > 0 && matriz[i - 1][j] == '.') || (j > 0 && matriz[i][j - 1] == '.'))) {
+                cont++;
+                
+                
+            } else if ((i == m - 1 && j > 0 && j < n - 1 && (matriz[i][j - 1] == '.' || matriz[i][j + 1] == '.'))) {
+                cont++;
+            } else if ((j == n - 1 && i > 0 && i < m - 1 && (matriz[i - 1][j] == '.' || matriz[i + 1][j] == '.'))) {
+                cont++;
+            } else if ((i == 0 && j > 0 && j < n - 1 && (matriz[i][j - 1] == '.' || matriz[i][j + 1] == '.'))) {
+                cont++;
+            } else if ((j == 0 && i > 0 && i < m - 1 && (matriz[i - 1][j] == '.' || matriz[i + 1][j] == '.'))) {
+                cont++;
+                
+               
+            } else if ((i != 0 && j != 0 && j != n - 1 && i != m - 1) && (matriz[i - 1][j] == '.' || matriz[i + 1][j] == '.' || matriz[i][j - 1] == '.' || matriz[i][j + 1] == '.')) {
+                cont++;
             }
+        }
+    }
+}
+
+ 
+
 
     printf("%d \n", cont);
 
