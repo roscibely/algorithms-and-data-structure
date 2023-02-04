@@ -12,6 +12,21 @@ Considere a matriz de entra:
 
 A saída deve ser 5, pois existem 5 costas.
 
+Considere a matriz de entra: 11 x 10
+..........
+.....###..
+....#####.
+.#...##...
+..........
+.......##.
+.##.......
+..##......
+..###.....
+..#####...
+..........
+
+A saída deve ser 22, pois existem 22 costas.
+
 */
 
 
@@ -34,6 +49,15 @@ int main(void){
     for(i = 0; i < m; i++){
             scanf(" %[^\n]s", matriz[i]);
     }
+
+    // imprime a matriz
+    printf("\n Mapa informado: \n");
+    for(i = 0; i < m; i++){
+        for(j = 0; j < n; j++)
+            printf("%c ", matriz[i][j]);
+        printf("\n");
+    }
+
 
     // conta as costas
     for ( i = 0; i < m; i++) {
@@ -80,15 +104,7 @@ int main(void){
         }
     }
     // imprime o numero de costas
-    printf("%d \n", cont);
-
-    // imprime a matriz
-    printf("Mapa: \n");
-    for(i = 0; i < m; i++){
-        for(j = 0; j < n; j++)
-            printf("%c ", matriz[i][j]);
-        printf("\n");
-    }
+    printf("\n O mapa contem :%d costas\n", cont);
 
     // libera a matriz
     for(i = 0; i < m; i++)
