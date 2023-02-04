@@ -1,6 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* 
+Problema Nlogonia
+
+Considere a matriz de entra: 
+3x3 
+#..
+###
+.#.
+
+A saída deve ser 5, pois existem 5 costas.
+
+*/
+
+
 int main(void){
     int m, n, i, j, k, l, cont = 0;
     char **matriz;
@@ -21,41 +35,51 @@ int main(void){
             scanf(" %[^\n]s", matriz[i]);
     }
 
-
-for ( i = 0; i < m; i++) {
-    for (j = 0; j < n; j++) {
-        if (matriz[i][j] == '#') {
-          
-            if ((i == 0 && j == 0 && (i + 1 < m && matriz[i + 1][j] == '.') || (j + 1 < n && matriz[i][j + 1] == '.'))) {
-                cont++;
-            } else if ((i == 0 && j == n - 1 && (i + 1 < m && matriz[i + 1][j] == '.') || (j > 0 && matriz[i][j - 1] == '.'))) {
-                cont++;
-            } else if ((i == m - 1 && j == 0 && (i > 0 && matriz[i - 1][j] == '.') || (j + 1 < n && matriz[i][j + 1] == '.'))) {
-                cont++;
-            } else if ((i == m - 1 && j == n - 1 && (i > 0 && matriz[i - 1][j] == '.') || (j > 0 && matriz[i][j - 1] == '.'))) {
-                cont++;
-                
-                
-            } else if ((i == m - 1 && j > 0 && j < n - 1 && (matriz[i][j - 1] == '.' || matriz[i][j + 1] == '.'))) {
-                cont++;
-            } else if ((j == n - 1 && i > 0 && i < m - 1 && (matriz[i - 1][j] == '.' || matriz[i + 1][j] == '.'))) {
-                cont++;
-            } else if ((i == 0 && j > 0 && j < n - 1 && (matriz[i][j - 1] == '.' || matriz[i][j + 1] == '.'))) {
-                cont++;
-            } else if ((j == 0 && i > 0 && i < m - 1 && (matriz[i - 1][j] == '.' || matriz[i + 1][j] == '.'))) {
-                cont++;
-                
-               
-            } else if ((i != 0 && j != 0 && j != n - 1 && i != m - 1) && (matriz[i - 1][j] == '.' || matriz[i + 1][j] == '.' || matriz[i][j - 1] == '.' || matriz[i][j + 1] == '.')) {
-                cont++;
+    // conta as costas
+    for ( i = 0; i < m; i++) {
+        for (j = 0; j < n; j++) {
+            if (matriz[i][j] == '#') {
+                // se for o canto superior esquerdo
+                if ((i == 0 && j == 0 && (i + 1 < m && matriz[i + 1][j] == '.') || (j + 1 < n && matriz[i][j + 1] == '.'))) {
+                    cont++;
+                } 
+                // se for o canto superior direito
+                else if ((i == 0 && j == n - 1 && (i + 1 < m && matriz[i + 1][j] == '.') || (j > 0 && matriz[i][j - 1] == '.'))) {
+                    cont++;
+                } 
+                // se for o canto inferior esquerdo
+                else if ((i == m - 1 && j == 0 && (i > 0 && matriz[i - 1][j] == '.') || (j + 1 < n && matriz[i][j + 1] == '.'))) {
+                    cont++;
+                } 
+                // se for o canto inferior direito
+                else if ((i == m - 1 && j == n - 1 && (i > 0 && matriz[i - 1][j] == '.') || (j > 0 && matriz[i][j - 1] == '.'))) {
+                    cont++;
+                      
+                } 
+                // se for a primeira linha
+                else if ((i == m - 1 && j > 0 && j < n - 1 && (matriz[i][j - 1] == '.' || matriz[i][j + 1] == '.'))) {
+                    cont++;
+                } 
+                // se for a ultima linha
+                else if ((j == n - 1 && i > 0 && i < m - 1 && (matriz[i - 1][j] == '.' || matriz[i + 1][j] == '.'))) {
+                    cont++;
+                }
+                // se for a primeira coluna
+                 else if ((i == 0 && j > 0 && j < n - 1 && (matriz[i][j - 1] == '.' || matriz[i][j + 1] == '.'))) {
+                    cont++;
+                }
+                // se for a ultima coluna
+                 else if ((j == 0 && i > 0 && i < m - 1 && (matriz[i - 1][j] == '.' || matriz[i + 1][j] == '.'))) {
+                    cont++;
+                } 
+                // se for o meio
+                else if ((i != 0 && j != 0 && j != n - 1 && i != m - 1) && (matriz[i - 1][j] == '.' || matriz[i + 1][j] == '.' || matriz[i][j - 1] == '.' || matriz[i][j + 1] == '.')) {
+                    cont++;
+                }
             }
         }
     }
-}
-
- 
-
-
+    // imprime o numero de costas
     printf("%d \n", cont);
 
     // imprime a matriz
@@ -66,6 +90,7 @@ for ( i = 0; i < m; i++) {
         printf("\n");
     }
 
+    // libera a matriz
     for(i = 0; i < m; i++)
         free(matriz[i]);
     free(matriz);
