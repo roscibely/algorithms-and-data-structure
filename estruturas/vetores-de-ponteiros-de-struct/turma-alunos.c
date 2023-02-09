@@ -95,7 +95,11 @@ void imprime_turma_aprovados(int n, Aluno**alunos, char turma){
     }
 }
 int main(void){
-    Aluno *aluno[MAX]; //Vector de ponteiros de struct
+    Aluno ** aluno = (Aluno**) malloc(MAX*sizeof(Aluno*)); //Vector de ponteiros de struct
+    if (aluno==NULL){
+        printf("Memoria cheia \n");
+        exit(1);
+    }
     inicializa(aluno,MAX);
     matricula(MAX,aluno);
     lanca_notas(MAX, aluno);
