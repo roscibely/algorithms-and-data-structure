@@ -65,19 +65,15 @@ int soma(int n) {
 Podemos multiplicar a execução de cada linha pelo tempo que leva para executar essa linha. Então, o tempo total de execução será a soma de todos os tempos de execução de cada linha. 
 
 $$ 
-
 T(n) = c1 + c2N + c3N + c4 
-
 $$ 
 
 ou ainda 
 
 $$
-
 T(n) =  (c2 + c3)N + (c1 + c4)
-
 $$ 
 
 Agora, podemos ver que o tempo de execução cresce linearmente com o tamanho da entrada.
 
-## [Complexidade de Algoritmos](/algorithms-and-data-structure/algoritmos-de-busca/complexity.md)
+## [Complexidade de Algoritmos](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/algoritmos-de-busca/complexity.md)
