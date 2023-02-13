@@ -24,7 +24,7 @@
 
   1. [Arquivos](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/arquivos) 
   2. [Tipos abstrato de dados](https://github.com/roscibely/algorithms-and-data-structure/tree/main/TAD) 
-  3. [Complexidade de Algoritmos](https://github.com/roscibely/algorithms-and-data-structure/blob/main/algoritmos-de-busca/complexity.md)
+  3. [Complexidade de Algoritmos](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/algoritmos-de-busca/time.md)
   4. [Algoritmos de Busca](https://github.com/roscibely/algorithms-and-data-structure/tree/main/algoritmos-de-busca)
   5. [Algoritmos de Ordenação](https://github.com/roscibely/algorithms-and-data-structure/tree/main/sort-algorithms)
 ---
