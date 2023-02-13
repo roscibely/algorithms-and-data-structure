@@ -40,3 +40,44 @@ Dessa forma, como no exemplo acima a última atribuição feita na variável u f
 
 
 ![](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/estruturas/union/union.png)
+
+
+### Exemplo 
+
+```c
+#include <stdio.h> 
+
+union tipo { 
+    int inteiro; 
+    float real; 
+    char caractere; 
+};
+
+typedef union tipo Tipo;
+
+int main() { 
+    Tipo t; 
+    t.inteiro = 10; 
+    printf("inteiro: %d \t real: %f \t caractere: %c \t \n", t.inteiro, t.real, t.caractere);
+    t.real = 10.5;
+    printf("inteiro: %d \t real: %f \t caractere: %c \t \n", t.inteiro, t.real, t.caractere);
+    t.caractere = 'a';
+    printf("inteiro: %d \t real: %f \t caractere: %c \t \n", t.inteiro, t.real, t.caractere);
+    return 0;
+}
+
+```
+
+### Saída
+
+```c
+inteiro: 10 	 real: 0.000000 	 caractere: NULL   
+inteiro: 0 	 real: 10.500000 	 caractere: NULL
+inteiro: 0 	 real: 0.000000 	 caractere: a
+```
+
+Veja que a variável t armazena apenas um tipo de dado por vez. Se a variável t armazenar um valor inteiro, então o valor real e o caractere são descartados. Se a variável t armazenar um valor real, então o valor inteiro e o caractere são descartados. Se a variável t armazenar um caractere, então o valor inteiro e o valor real são descartados.
+
+
+
+

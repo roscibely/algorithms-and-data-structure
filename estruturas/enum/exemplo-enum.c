@@ -14,7 +14,8 @@ typedef enum response {
 int main(void){
 
     bool var; 
-    var=true;
+    printf("Digite true ou false: ");
+    scanf("%d", &var);
 
     if(var==false){
         printf("Is false");
