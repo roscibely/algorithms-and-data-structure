@@ -80,4 +80,8 @@ Veja que a variável t armazena apenas um tipo de dado por vez. Se a variável t
 
 
 
+# Exercício 
+
+1. Escreva um programa que implementa uma struct Aluno com os seguintes campos: nome, matrícula, curso e índice acadêmico. A variável índice acadêmico deve ser uma union que armazena um dos índices: índice geral (IG), índice de rendimento (IRA) acadêmico ou índice de rendimento técnico (IRT). O programa deve ler os dados de um aluno e imprimir os dados do aluno. 
+
 
