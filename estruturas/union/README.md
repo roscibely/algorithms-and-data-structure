@@ -17,11 +17,13 @@ union nome_da_union {
 ### Exemplo de declaração de union:
 
 ```c
-union {
+union uniao{
     int inteiro;
     float real;
     char caractere;
-} u;
+};
+
+union uniao u; // declara a variável u do tipo union uniao
 
 
 u.inteiro = 10; // armazena o valor 10 na variável inteiro
