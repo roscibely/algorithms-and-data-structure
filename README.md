@@ -68,8 +68,10 @@
   gcc nome_do_programa.c -o nome_do_programa && nome_do_programa
   ```
 
- gcc é o compilador do C, ele compila o código fonte e gera um arquivo executável. O comando acima compila o arquivo nome_do_programa.c e gera um arquivo executável nome_do_programa. O parâmetro -o nome_do_programa indica o nome do arquivo executável gerado. O parâmetro && indica que o próximo comando só será executado se o comando anterior for executado com sucesso. O comando ./nome_do_programa executa o arquivo executável nome_do_programa.
+ gcc é o compilador do C, ele compila o código fonte e gera um arquivo executável. O comando acima compila o arquivo ```nome_do_programa.c``` e gera um arquivo executável ```nome_do_programa```. O parâmetro ```-o nome_do_programa``` indica o nome do arquivo executável gerado. O parâmetro ```&&``` indica que o próximo comando só será executado se o comando anterior for executado com sucesso. O comando ```./nome_do_programa``` executa o arquivo executável ```nome_do_programa```.
 
+
+---
 <div>
   <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/develop/ufersa.jpg" width="700" height="250">
 </div>
