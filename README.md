@@ -40,7 +40,8 @@
 
 #### Especial 
 
-* Compilando e executando programas em C no terminal do Linux
+#### i) Compilando e executando programas em C no terminal do Linux
+
   Com o terminal aberto, digite o comando abaixo para compilar o programa:
   ```bash
   gcc nome_do_programa.c -o nome_do_programa
@@ -54,7 +55,8 @@
   gcc nome_do_programa.c -o nome_do_programa && ./nome_do_programa
   ```
 
-* Compilando e executando programas em C no terminal do Windows
+#### ii) Compilando e executando programas em C no terminal do Windows
+
   Com o terminal aberto, digite o comando abaixo para compilar o programa:
   ```bash
   gcc nome_do_programa.c -o nome_do_programa
