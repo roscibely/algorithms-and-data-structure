@@ -27,6 +27,22 @@ O primeiro parâmetro é o nome do arquivo que será aberto. O segundo parâmetr
 - w+: abre um arquivo existente para leitura e escrita. Se o arquivo não existir, cria um novo arquivo.
 - a+: abre um arquivo existente para leitura e escrita. Se o arquivo não existir, cria um novo arquivo. As novas informações são adicionadas ao final do arquivo.
 
+### Exemplo: abrindo um arquivo
+
+Neste exemplo, o arquivo "arquivo.txt" é aberto para escrita.
+
+```c
+#include <stdio.h>
+
+FILE * fp;
+fp = fopen("arquivo.txt", "w");
+if (fp == NULL) {
+    printf("Erro ao abrir o arquivo.\n");
+    return 1;
+}
+```
+
+
 ### fclose()
 
 A função fclose() é usada para fechar um arquivo.
@@ -36,6 +52,20 @@ int fclose(FILE *fp);
 ```
 
 O parâmetro fp é um ponteiro para o arquivo que será fechado.
+
+### Exemplo: fechando um arquivo
+
+Neste exemplo, o arquivo "arquivo.txt" é fechado.
+
+```c
+#include <stdio.h>
+
+FILE * fp;
+fp = fopen("arquivo.txt", "w"); // Abre o arquivo
+ 
+fclose(fp); // Fecha o arquivo
+
+```
 
 ### fgetc()
 
@@ -47,6 +77,30 @@ int fgetc(FILE *fp);
 
 O parâmetro fp é um ponteiro para o arquivo que será lido.
 
+### Exemplo: lendo com a função fgetc()
+
+Neste exemplo, o arquivo "arquivo.txt" é aberto para leitura. Em seguida, o caractere 'A' é lido do arquivo. Por fim, o arquivo é fechado. Portanto, considerando que o arquivo "arquivo.txt" contenha apenas o caractere 'A', o programa imprimirá na tela o caractere 'A'.
+
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    int c;
+
+    fp = fopen("arquivo.txt", "r");
+    if (fp == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+    c = fgetc(fp); // Lê um caractere do arquivo
+    printf("%c\n", c); // Imprime o caractere lido
+    fclose(fp);
+
+    return 0;
+}
+```
+
 ### fputc()
 
 A função fputc() é usada para escrever um caractere em um arquivo.
@@ -56,6 +110,28 @@ int fputc(int c, FILE *fp);
 ```
 
 O primeiro parâmetro é o caractere que será escrito. O segundo parâmetro é um ponteiro para o arquivo que será escrito.
+
+### Exemplo: escrevendo com a função fputc()
+
+Neste exemplo, o arquivo "arquivo.txt" é aberto para escrita. Em seguida, o caractere 'A' é escrito no arquivo. Por fim, o arquivo é fechado.
+
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+
+    fp = fopen("arquivo.txt", "w");
+    if (fp == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+    fputc('A', fp); // Escreve o caractere 'A' no arquivo apontado por fp
+    fclose(fp);
+
+    return 0;
+}
+```
 
 ### feof()
 
@@ -67,6 +143,31 @@ int feof(FILE *fp);
 
 O parâmetro fp é um ponteiro para o arquivo que será verificado.
 
+### Exemplo: Veficando se chegamos ao final do arquivo
+
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    int c;
+
+    fp = fopen("arquivo.txt", "r"); // Abre o arquivo
+    if (fp == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+    while (!feof(fp)) { // Enquanto não chegar ao final do arquivo
+        c = fgetc(fp); // Lê um caractere do arquivo
+        printf("%c", c); // Imprime o caractere lido
+    }
+    fclose(fp); // Fecha o arquivo
+
+    return 0;
+}
+```
+
+
 ### fgets()
 
 A função fgets() é usada para ler uma linha de um arquivo.
@@ -77,6 +178,30 @@ char *fgets(char *str, int n, FILE *fp);
 
 O primeiro parâmetro é um ponteiro para uma string que será usada para armazenar a linha lida. O segundo parâmetro é o número máximo de caracteres que podem ser lidos. O terceiro parâmetro é um ponteiro para o arquivo que será lido.
 
+### Exemplo: lendo com a função fgets()
+
+Neste exemplo, o arquivo "arquivo.txt" é aberto para leitura. Em seguida, uma linha do arquivo é lida e armazenada na string str. Por fim, o arquivo é fechado. Portanto, considerando que o arquivo "arquivo.txt" contenha apenas a linha "Hello World!", o programa imprimirá na tela a string "Hello World!".
+
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    char str[100];
+
+    fp = fopen("arquivo.txt", "r");
+    if (fp == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+    fgets(str, 100, fp); // Lê uma linha do arquivo fp e armazena na string str com no máximo 100 caracteres
+    printf("%s", str); // Imprime a string lida
+    fclose(fp);
+
+    return 0;
+}
+```
+
 ### fputs()
 
 A função fputs() é usada para escrever uma string em um arquivo.
@@ -86,6 +211,28 @@ int fputs(const char *str, FILE *fp);
 ```
 
 O primeiro parâmetro é a string que será escrita. O segundo parâmetro é um ponteiro para o arquivo que será escrito.
+
+### Exemplo: escrevendo com a função fputs()
+
+Neste exemplo, o arquivo "arquivo.txt" é aberto para escrita. Em seguida, a string "Hello World!" é escrita no arquivo. Por fim, o arquivo é fechado.
+
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+
+    fp = fopen("arquivo.txt", "w");
+    if (fp == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+    fputs("Hello World!", fp); // Escreve a string "Hello World!" no arquivo apontado por fp
+    fclose(fp);
+
+    return 0;
+}
+```
 
 ### fprintf()
 
@@ -98,6 +245,28 @@ int fprintf(FILE *fp, const char *format, ...);
 
 O primeiro parâmetro é um ponteiro para o arquivo que será escrito. O segundo parâmetro é a string formatada que será escrita.
 
+### Exemplo: escrevendo com a função fprintf()
+
+Neste exemplo, o arquivo "arquivo.txt" é aberto para escrita. Em seguida, a string "Hello World!" é escrita no arquivo. Por fim, o arquivo é fechado.
+
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+
+    fp = fopen("arquivo.txt", "w");
+    if (fp == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+    fprintf(fp, "Hello World!"); // Escreve a string "Hello World!" no arquivo apontado por fp
+    fclose(fp);
+
+    return 0;
+}
+```
+
 ### fscanf()
 
 A função fscanf() é usada para ler uma string formatada de um arquivo.
@@ -107,6 +276,30 @@ int fscanf(FILE *fp, const char *format, ...);
 ```
 
 O primeiro parâmetro é um ponteiro para o arquivo que será lido. O segundo parâmetro é a string formatada que será lida.
+
+### Exemplo: lendo com a função fscanf()
+
+Neste exemplo, o arquivo "arquivo.txt" é aberto para leitura. Em seguida, uma string formatada é lida do arquivo e armazenada na string str. Por fim, o arquivo é fechado. Portanto, considerando que o arquivo "arquivo.txt" contenha apenas a string "Hello World!", o programa imprimirá na tela a string "Hello World!".
+
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    char str[100];
+
+    fp = fopen("arquivo.txt", "r");
+    if (fp == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+    fscanf(fp, "%s", str); // Lê uma string formatada do arquivo fp e armazena na string str
+    printf("%s", str); // Imprime a string lida
+    fclose(fp);
+
+    return 0;
+}
+```
 
 ## Exemplos
 
