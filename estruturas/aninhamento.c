@@ -1,6 +1,11 @@
 #include <stdio.h> 
 #include <stdlib.h>
 
+typedef union  documento {
+    int cpf;
+    int rg;
+}Documento;
+
 typedef struct disciplina {
     char nome[50];
     int codigo;
@@ -10,7 +15,7 @@ typedef struct disciplina {
 typedef struct aluno {
     char nome[50];
     int matricula;
-    int cpf;
+    Documento documento;
     Disciplina *disciplina; 
 } Aluno;
 
@@ -35,11 +40,11 @@ Aluno * aloca_aluno() {
 
 void inicializar_aluno(Aluno *aluno) {
     printf("Digite o nome do aluno: ");
-    scanf("%s", aluno->nome);
+    scanf(" %[^\n]", aluno->nome);
     printf("Digite a matricula do aluno: ");
     scanf("%d", &aluno->matricula);
     printf("Digite o cpf do aluno: ");
-    scanf("%d", &aluno->cpf);
+    scanf("%d", &aluno->documento.cpf);
     printf("Digite o nome da disciplina: ");
     scanf("%s", aluno->disciplina->nome);
     printf("Digite o codigo da disciplina: ");
@@ -49,7 +54,7 @@ void inicializar_aluno(Aluno *aluno) {
 }
 
 void imprime_aluno(Aluno *aluno){
-    printf(" Nome do aluno: %s, Matricula: %d, CPF: %d ", aluno->nome, aluno->matricula, aluno->cpf);
+    printf(" Nome do aluno: %s, Matricula: %d, CPF: %d ", aluno->nome, aluno->matricula, aluno->documento.cpf);
     printf(" Nome da disciplina: %s, Codigo: %d, Carga Horaria: %d ", aluno->disciplina->nome, aluno->disciplina->codigo, aluno->disciplina->carga_horaria);
 }
 
