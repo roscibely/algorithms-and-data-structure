@@ -37,8 +37,14 @@
 #### EXTRA 
   1. [Intereção por menu](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/interecao%20por%20menus)
 ---
+#### Quer aprender Python? 
+Comece [clicando aqui](https://github.com/roscibely/data-structure-with-python) 
+
+---
 
 #### Especial 
+
+---
 
 #### i) Compilando e executando programas em C no terminal do Linux
 
@@ -54,6 +60,7 @@
   ```bash
   gcc nome_do_programa.c -o nome_do_programa && ./nome_do_programa
   ```
+---
 
 #### ii) Compilando e executando programas em C no terminal do Windows
 
