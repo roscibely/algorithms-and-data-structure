@@ -89,17 +89,30 @@ void imprime_alunos(Turma* turma){
     }
 }
 
+// Função para liberar a memória alocada para a estrutura turma e variável aluno 
+
+void libera_turma(Turma* turma){
+    int i;
+    for(i = 0; i < turma->vagas; i++){
+        free(turma->alunos[i]);
+    }
+    free(turma);
+}
+
 int main(void){
 
     turmas[0] = cria_turma('A');
     turmas[1] = cria_turma('B');
     matricula_aluno(turmas[0], 1, "Joao");
-    matricula_aluno(turmas[0], 2, "Maria");
-    matricula_aluno(turmas[1], 4, "Pedro");
-    lanca_notas(turmas[0]);
-    lanca_notas(turmas[1]);
+    //matricula_aluno(turmas[0], 2, "Maria");
+    //matricula_aluno(turmas[1], 4, "Pedro");
+    //lanca_notas(turmas[0]);
+    //lanca_notas(turmas[1]);
     imprime_alunos(turmas[0]);
-    imprime_alunos(turmas[1]);
+    //imprime_alunos(turmas[1]);
+    libera_turma(turmas[0]);
+    libera_turma(turmas[1]);
+
     
     return 0;
 }
