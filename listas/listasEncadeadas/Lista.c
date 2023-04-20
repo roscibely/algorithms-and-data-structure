@@ -21,6 +21,11 @@ Lista* lst_cria(void){
 
 Lista* lst_insere(Lista* l, int v){
 	Lista* novo = (Lista*) malloc(sizeof(Lista));
+	if (novo == NULL)
+    {
+        printf("[ERRO] memoria insuficiente!");
+        exit(1);
+    }
 	novo->info = v;
 	novo->prox = l;
 	return novo;
