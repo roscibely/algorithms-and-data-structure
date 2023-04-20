@@ -18,7 +18,7 @@ Pilha * q = pilha_cria();
 pilha_push(q, 3.0);
 pilha_push(q, 7.0);
 
-contatena(p,q);
+concatena(p,q);
 imprime(p);
 Pilha * c = copia_pilha(p);
 imprime(c);
