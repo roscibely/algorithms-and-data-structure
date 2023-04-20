@@ -71,7 +71,7 @@ void imprime(Pilha*l){
 
 }
 
-void contatena(Pilha * p1, Pilha *p2){
+void concatena(Pilha * p1, Pilha *p2){
     Lista*aux = NULL;
     while(p2->prim!=NULL){
         Lista* novo = (Lista*) malloc(sizeof(Lista));
