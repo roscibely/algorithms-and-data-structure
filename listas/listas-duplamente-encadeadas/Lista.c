@@ -12,6 +12,11 @@ struct lista2{
 Lista2* lst_insere(Lista2 *l, int v){
 
     Lista2* novo = (Lista2*) malloc(sizeof(Lista2));
+    if (novo == NULL)
+    {
+        printf("[ERRO] memoria insuficiente!");
+        exit(1);
+    }
     novo->info = v;
     novo->prox = l;
     novo->ant = NULL;
