@@ -80,6 +80,26 @@ Comece [clicando aqui](https://github.com/roscibely/data-structure-with-python)
 
  gcc é o compilador do C, ele compila o código fonte e gera um arquivo executável. O comando acima compila o arquivo ```nome_do_programa.c``` e gera um arquivo executável ```nome_do_programa```. O parâmetro ```-o nome_do_programa``` indica o nome do arquivo executável gerado. O parâmetro ```&&``` indica que o próximo comando só será executado se o comando anterior for executado com sucesso. O comando ```./nome_do_programa``` executa o arquivo executável ```nome_do_programa```.
 
+### Debugger
+
+  Para compilar o programa com o debugger, digite o comando abaixo:
+  ```bash
+  gcc -g nome_do_programa.c -o nome_do_programa
+  ```
+  Para executar o programa com o debugger, digite o comando abaixo:
+  ```bash
+  gdb nome_do_programa
+  ```
+  Para compilar e executar o programa com o debugger em um único comando, digite o comando abaixo:
+  ```bash
+  gcc -g nome_do_programa.c -o nome_do_programa && gdb nome_do_programa
+  ```
+  Para executar o programa com o debugger, digite o comando abaixo:
+  ```bash
+  gdb nome_do_programa
+  ```
+
+
 
 ---
 <div>
