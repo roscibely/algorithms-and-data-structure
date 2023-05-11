@@ -15,6 +15,6 @@ void pilha_imprime(Pilha *p);
 
 float topo(Pilha* p);
 
-void contatena(Pilha * p1, Pilha *p2);
+void concatena(Pilha * p1, Pilha *p2);
 
 Pilha* copia_pilha(Pilha* p);

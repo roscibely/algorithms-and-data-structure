@@ -6,7 +6,7 @@
 
 3. O trabalho deve estar disponível em um repositório no GitHub. 
 
-4. O trabalho deve conter um arquivo README.md com a descrição do trabalho, explicando como o trabalho deve ser executado, e com a descrição dos algoritmos de busca e ordenação que foram implementados.
+4. O trabalho deve conter um arquivo README.md com a descrição do trabalho, explicando como o trabalho deve ser executado, e com a descrição dos algoritmos de busca e ordenação que foram implementados, complexidade. 
 
 5. Um documento PDF com a descrição do trabalho, explicando os algoritmos de busca e ordenação que foram implementados, e com a analise de complexidade dos algoritmos de busca e ordenação que foram implementados.
 

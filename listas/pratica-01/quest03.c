@@ -16,6 +16,11 @@ Lista* contatena(Lista* l1, Lista* l2){
 
 Lista * insere(Lista *l, int v){
     Lista * novo = (Lista*) malloc(sizeof(Lista));
+    if (novo == NULL)
+    {
+        printf("[ERRO] memoria insuficiente!");
+        exit(1);
+    }
     novo->info = v;
     novo->prox = l;
     return novo;
