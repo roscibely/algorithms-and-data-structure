@@ -122,5 +122,20 @@ Lista* lst_insere_ordenada(Lista * l, int v){
 	return l;
 }
 
-
+ 
+Lista* lst_ler_arquivo(char* nome_arquivo){
+	FILE *arquivo;
+	int valor;
+	Lista* l = lst_cria();
+	arquivo = fopen(nome_arquivo, "r");
+	if(arquivo == NULL){
+		printf("Erro ao abrir o arquivo!\n");
+		exit(1);
+	}
+	while(fscanf(arquivo, "%d", &valor) != EOF){
+		l = lst_insere(l, valor);
+	}
+	fclose(arquivo);
+	return l;
+}
 

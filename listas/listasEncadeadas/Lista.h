@@ -25,4 +25,6 @@ void lst_libera(Lista* l);
 // função que insere de forma ordenada um elemento na lista
 Lista* lst_insere_ordenada(Lista * l, int v);
 
+	// Função que ler de uma arquivo e armazena na lista encadeada de inteiros
+Lista* lst_ler_arquivo(char* nome_arquivo); 
 
