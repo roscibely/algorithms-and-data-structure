@@ -8,6 +8,9 @@
 
 ### PEX1241 - Algoritmos e Estrutura de dados I
 #### Bacharelado Interdisciplinar em Tecnologia da Informação - UFERSA
+
+---
+ - Git e controle de versão: 🤜 [curso grátis](https://www.dataquest.io/course/git-and-vcs/) 
 ---
 #### Parte I 
 1. [Ponteiros](https://github.com/roscibely/algorithms-and-data-structure/tree/main/pointers)
