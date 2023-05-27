@@ -41,6 +41,7 @@ int main() {
     free(fruta3);
 
     return 0;
+    }
 ```
 
 
