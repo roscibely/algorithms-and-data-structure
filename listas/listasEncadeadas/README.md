@@ -6,6 +6,44 @@
 
 ### Além disso, não é necessário saber o tamanho da lista antes de inserir os elementos, pois a lista pode crescer conforme a necessidade. Chamos cada elemento da lista de nó, e um conjunto de nós é chamado de lista encadeada. 
 
+## Exemplo: Considere a lista de frutas: 
+```
+0. maçã
+1. banana
+2. laranja
+```
+Queremos criar uma lista usando a linguagem de programação C. Podemos fazer isso da seguinte maneira: 
+```c
+struct Fruta {
+    char nome[20];
+    struct Fruta* proxima;
+};
+
+int main() {
+    // Criar os elementos da lista
+    struct Fruta* fruta1 = (struct Fruta*)malloc(sizeof(struct Fruta));
+    struct Fruta* fruta2 = (struct Fruta*)malloc(sizeof(struct Fruta));
+    struct Fruta* fruta3 = (struct Fruta*)malloc(sizeof(struct Fruta));
+
+    // Atribuir os valores das frutas
+    strcpy(fruta1->nome, "maçã");
+    strcpy(fruta2->nome, "banana");
+    strcpy(fruta3->nome, "laranja");
+
+    // Construir a lista encadeada
+    fruta1->proxima = fruta2;
+    fruta2->proxima = fruta3;
+    fruta3->proxima = NULL;
+
+   // Liberar a memória alocada
+    free(fruta1);
+    free(fruta2);
+    free(fruta3);
+
+    return 0;
+```
+
+
 Exemplo de lista encadeada para inteiros:
 
 ```c 
