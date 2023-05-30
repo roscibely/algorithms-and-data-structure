@@ -11,6 +11,7 @@
 
 ---
  - Git e controle de versão: 🤜 [curso grátis](https://www.dataquest.io/course/git-and-vcs/) 
+ - [Git cheat sheet](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/github-git-cheat-sheet.pdf) :octocat:
 ---
 #### Parte I 
 1. [Ponteiros](https://github.com/roscibely/algorithms-and-data-structure/tree/main/pointers)
