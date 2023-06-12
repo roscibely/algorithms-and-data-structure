@@ -4,7 +4,7 @@
 
 ### As listas encadeadas são estruturas de dados dinâmicas, ou seja, podem crescer e diminuir de tamanho conforme a necessidade. A princial vantagem das listas encadeadas é a facilidade de inserção e remoção de elementos, pois não é necessário deslocar os elementos da lista para inserir ou remover um elemento. 
 
-### Além disso, não é necessário saber o tamanho da lista antes de inserir os elementos, pois a lista pode crescer conforme a necessidade. Chamos cada elemento da lista de nó, e um conjunto de nós é chamado de lista encadeada. 
+### Além disso, não é necessário saber o tamanho da lista antes de inserir os elementos, pois a lista pode crescer conforme a necessidade. Chamamos cada elemento da lista de nó, e um conjunto de nós é chamado de lista encadeada. 
 
 ## Exemplo: Considere a lista de frutas: 
 ```
