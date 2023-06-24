@@ -26,10 +26,10 @@ As listas são estruturas de dados dinâmicas, ou seja, podem crescer e diminuir
 
  As listas podem ser implementadas de diversas formas, como por exemplo, através de um vetor, uma lista encadeada, uma lista duplamente encadeada, uma lista circular, etc. As listas podem ser implementadas em diferentes linguagens de programação, como arrays ou linked lists. Cada implementação tem suas particularidades, mas a ideia fundamental é a mesma: armazenar elementos em uma sequência ordenada e permitir a manipulação desses elementos.
 
-1. [Listas simples (encadeada)](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/listas/listasEncadeadas)
-2. [Listas duplamente encadeadas](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/listas/listas-duplamente-encadeadas)
+1. [Listas simples (encadeada)](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/root/listas/listasEncadeadas)
+2. [Listas duplamente encadeadas](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/root/listas/listas-duplamente-encadeadas)
 3. [Listas circulares]()
-4. [Listas duplamente circulares](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/listas/listas-circulares)
+4. [Listas duplamente circulares](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/root/listas/listas-circulares)
 
 
 Referências recomendadas: 
