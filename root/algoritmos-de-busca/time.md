@@ -76,4 +76,4 @@ $$
 
 Agora, podemos ver que o tempo de execução cresce linearmente com o tamanho da entrada.
 
-## [Complexidade de Algoritmos](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/algoritmos-de-busca/complexity.md)
+## [Complexidade de Algoritmos](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/root/algoritmos-de-busca/complexity.md)
