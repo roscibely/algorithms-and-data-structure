@@ -22,7 +22,8 @@
   - 3.1  [Vetores de Estruturas](https://github.com/roscibely/algorithms-and-data-structure/tree/main/root/estruturas/vetores-estruturados)
   - 3.2  [Vetores de ponteiros para estruturas](https://github.com/roscibely/algorithms-and-data-structure/tree/develop/root/estruturas/vetores-de-ponteiros-de-struct)
   - 3.3 [União](https://github.com/roscibely/algorithms-and-data-structure/tree/main/root/estruturas/union)
-  - 3.4 [Enumerações](https://github.com/roscibely/algorithms-and-data-structure/tree/main/root/estruturas/enum) 
+  - 3.4 [Enumerações](https://github.com/roscibely/algorithms-and-data-structure/tree/main/root/estruturas/enum)
+  - [Exercícios](https://github.com/roscibely/algorithms-and-data-structure/blob/develop/root/questoes_revisao.md)
 ---
 #### Parte II
 
