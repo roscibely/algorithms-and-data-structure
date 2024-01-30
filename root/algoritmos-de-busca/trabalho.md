@@ -1,8 +1,8 @@
 # Requesitos para o desenvolvimento do trabalho com algoritmos de busca e ordenação: 
 
-1. O trabalho deve ser desenvolvido grupo de 2 (dupla).
+1. O trabalho deve ser desenvolvido grupo de 4.
 
-2. O trabalho deve ser desenvolvido em linguagem C ou Python.
+2. O trabalho deve ser desenvolvido em qualquer linguagem (C, Python, Java, Javascript, etc).
 
 3. O trabalho deve estar disponível em um repositório no GitHub. 
 
