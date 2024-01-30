@@ -88,7 +88,7 @@ x[0] = 1;
 free(x);
 ```
 
-## Funçãp realloc 
+## Função realloc 
 
 A função realloc é usada para realocar um vetor.
 
@@ -120,8 +120,8 @@ printf("%d", x[0]);
 ```
 
 <div>
-  <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/develop/vectors/vetores.png" width="350" height="300">
-  <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/main/vectors/vetor-alocacao-dinamica.png" width="350" height="300">
+  <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/main/root/vectors/vetores.png" width="350" height="300">
+  <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/main/root/vectors/vetor-alocacao-dinamica.png" width="350" height="300">
 </div>
 
 #### Nota: Tente primeiro fazer seu código e só depois disso acesse a possível resposta. 
