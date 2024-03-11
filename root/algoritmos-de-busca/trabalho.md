@@ -1,8 +1,8 @@
-# Requesitos para o desenvolvimento do trabalho com algoritmos de busca e ordenação: 
+# Requisitos para o desenvolvimento do trabalho com algoritmos de busca e ordenação: 
 
-1. O trabalho deve ser desenvolvido grupo de 2 (dupla).
+1. O trabalho deve ser desenvolvido grupo de 4.
 
-2. O trabalho deve ser desenvolvido em linguagem C ou Python.
+2. O trabalho deve ser desenvolvido em qualquer linguagem (C, Python, Java, Javascript, etc).
 
 3. O trabalho deve estar disponível em um repositório no GitHub. 
 
@@ -14,19 +14,19 @@
 
 5.3 Analise de complexidade dos algoritmos de busca e ordenação que foram implementados.
 
-# Algoritmos de busca
+# Algoritmos de busca:
 
-1. Busca sequencial (linear)
-2. Busca binária
-3. Busca por interpolação
-4. Jump search
-5. Busca Exponencial (Struck)
+1. Busca sequencial (linear);
+2. Busca binária;
+3. Busca por interpolação;
+4. Jump search;
+5. Busca Exponencial (Struck).
 
-# Algoritmos de ordenação
+# Algoritmos de ordenação:
 
-1. Bubble Sort
-2. Insertion Sort
-3. Selection Sort
-4. Comb Sort
-5. Gnome Sort
+1. Bubble Sort;
+2. Insertion Sort;
+3. Selection Sort;
+4. Comb Sort;
+5. Gnome Sort.
 
