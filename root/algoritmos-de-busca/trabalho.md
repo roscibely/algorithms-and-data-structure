@@ -1,6 +1,6 @@
 # Requisitos para o desenvolvimento do trabalho com algoritmos de busca e ordenação: 
 
-1. O trabalho deve ser desenvolvido grupo de 4.
+1. O trabalho deve ser desenvolvido grupo de 2.
 
 2. O trabalho deve ser desenvolvido em qualquer linguagem (C, Python, Java, Javascript, etc).
 
