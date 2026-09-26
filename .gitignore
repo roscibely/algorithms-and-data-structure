@@ -28,3 +28,5 @@ root/.vscode/*
 *.toc
 *.synctex.gz
 *.tex
+avaliacao-oral*.pdf
+gabarito*.c
